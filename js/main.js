@@ -30,7 +30,7 @@ function getMovies(searchText) {
                 <img onerror="handleMissingImg(this)" class="trailerImg" src="http://image.tmdb.org/t/p/w185/${movie.poster_path}" alt="film">
                 <span class="filmTitle"><strong>${movie.title}</strong></span><span class="filmDate">${movie.release_date}</span>
               </a>
-              <p class="filmDesc comment more">${movie.overview}</p>
+              <p class="filmDesc">${movie.overview}</p>
             </div>
             `;
         });
