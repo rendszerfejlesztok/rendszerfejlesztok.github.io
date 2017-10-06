@@ -1,0 +1,135 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Filmify</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+				<link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon">
+				<link rel="icon" href="res/favicon.ico" type="image/x-icon">
+
+				<!-- 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+      -->
+				
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/navigation.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/footer.css">
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+  <body>
+  <section class="navigation">
+    <header>
+      <nav>
+        <a href="./index.html"><img id="logo" src="res/logo.svg" alt="logo"></a>
+				<form id="searchForm" action="#">
+					<input type="text" id="searchText" placeholder="Keresés (angolul)">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input type="submit" />
+				</form>
+				<ul>
+					<li><a href="#top">top</a></li>
+					<li><a href="#moviesNew">filmek</a></li>
+					<li><a href="#seriesNew">sorozatok</a></li>
+					<li><a href="./bejelentkezes">bejelentkezés</a></li>
+					<span class="logout"><li><a href="./index.html">kijelentkezés</a></li></span>
+					<span class="register"><li><a href="./regisztracio">regisztráció</a></li></span>
+					<li>&nbsp;</li>
+
+				</ul>
+      </nav>
+    </header>
+  </section>
+  
+
+
+  <!-- MINDEN TARTALOM -->
+  <section class="content">
+    <h1 id="results">Találatok</h1>
+      <div class="ui grid container">
+        <div class="row">
+          <div id="movies">
+            
+          </div>
+      </div>
+    </div>
+
+  	<div id="moviesNew" class="trailers">
+  		<h1>A legújabb feltöltött filmek</h1>
+  		<div class="container">
+  			<div class="row">
+  				<div class="film">
+  					<a href="#">
+  						<img class="trailerImg" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjA3ODQwNzM0OF5BMl5BanBnXkFtZTgwMjY5MTczMzI@._V1_SX201_CR0,0,201,298_AL_.jpg" alt="film">
+  						<span class="filmTitle">Dolls Are Creepy</span>
+  					</a>
+  					<span class="filmDate">2017</span>
+						<p class="filmDesc comment more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis a cupiditate fugiat, qui doloremque. Numquam dignissimos, id vero saepe hic adipisci odio eveniet modi ullam a aut ut, eos ducimus.</p>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+
+  	<div id="seriesNew" class="trailers">
+  		<h1>A legújabb feltöltött sorozat epizódok</h1>
+  		<div class="container">
+  			<div class="row">
+  				
+  			</div>
+  		</div>
+  	</div>
+
+  	<div id="top" class="trailers">
+  		<h1>Legnagyobb értékelésűek</h1>
+  		<div class="container">
+  			<div class="row">
+  				
+  			</div>
+  		</div>
+  	</div>
+  </section>
+  
+  <!-- FOOOOOTER -->
+  <section class="footer">
+    <footer>
+      <a href="/"><img id="logo" src="res/logo.svg" alt="logo"></a>
+      <ul>
+				<li><a href="#top">top</a></li>
+				<li><a href="#moviesNew">filmek</a></li>
+				<li><a href="#seriesNew">sorozatok</a></li>
+				<span class="logout"><li><a href="./index.html">kijelentkezés</a></li></span>
+				<li><a href="./regisztracio">regisztráció</a></li>
+			</ul>
+			<ul class="socialIcons">
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			</ul>
+      <div class="center">
+        <h6>Copyright &copy; 2017</h6>
+        <img src="res/powered.svg" alt="tmdb">
+      </div>
+    </footer>
+  </section>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="js/functions.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	
+		$(".comment").shorten();
+	
+	});
+</script>
+</body>
+</html>
