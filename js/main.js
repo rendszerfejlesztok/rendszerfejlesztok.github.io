@@ -1,10 +1,21 @@
 $(document).ready(() => {
-  $('#searchForm').on('submit', (e) => {
-    let searchText = $('#searchText').val();
-    getMovies(searchText);
-    e.preventDefault();
-  });
+
+        $('#searchForm input[type=submit]').hide();
+
+        $('#searchForm input[type=text]').keypress(function(e) {
+            if(e.which == 10 || e.which == 13) {
+              this.form.submit();
+              $('#results').css("visibility", "visible");
+              let searchText = $('#searchText').val();
+              getMovies(searchText);
+            }
+        });
 });
+
+function handleMissingImg(e)
+{
+     e.src = 'res/no_photo.jpg';
+}
 
 function getMovies(searchText) {
   axios.get('https://api.themoviedb.org/3/search/movie?api_key=bdc6565cd770302d9468d266d91a1ed1&query='+searchText)
@@ -16,7 +27,7 @@ function getMovies(searchText) {
             output += `
             <div class="film four wide">
               <a onclick=movieSelected('${movie.id}') href="#">
-                <img class="trailerImg" src="http://image.tmdb.org/t/p/w185/${movie.poster_path}" alt="film">
+                <img onerror="handleMissingImg(this)" class="trailerImg" src="http://image.tmdb.org/t/p/w185/${movie.poster_path}" alt="film">
                 <span class="filmTitle"><strong>${movie.title}</strong></span><span class="filmDate">${movie.release_date}</span>
               </a>
               <p class="filmDesc comment more">${movie.overview}</p>
