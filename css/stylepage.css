@@ -1,0 +1,217 @@
+
+/*
+	version: 1.0.0
+	date: 2017.10.01.
+	author: Hegedűs Viktor
+	
+	main font-type:
+	Raleway, sans serif
+	
+	colour-codes of the application:
+	
+	1,  #488A99 - dark aqua
+	2,  #AF8700 - gold
+	2a, #665600 - gold
+	3,  #353C3F - charcoal
+	4,  #B4B4B4 - gray
+	5,  #3A5199 - cobalt (blue-gray)
+	6,  #537072 - hazy gray
+	7,  #113743 - denim (blue-gray)
+	8,  #24333c - darkblue-gray (login & sign up form)
+	
+	__________________________________________
+	body background-colors: (linear gradient)
+	#537072
+	#B4B4B4
+	__________________________________________
+	button-colors:
+	#AF8700 default
+	#665600 hover
+	__________________________________________
+	movie text:
+	#AF8700
+	__________________________________________
+	login-form background-colors: 
+	rgb(36,51,60)  google: rgb to hex
+	rgb(58, 77, 79)
+	__________________________________________
+	text-color:
+	white
+	__________________________________________
+	go back to main page button:
+	#cc0000 default
+	#800000 hover
+	__________________________________________
+	
+	
+	ideas for others colours:
+	https://designschool.canva.com/blog/100-color-combinations/
+*/
+input:focus, textarea:focus {
+	outline: none;
+}
+
+#height {
+	height: 100%;
+}
+
+#bgStyle{
+	background: linear-gradient(#537072, #B4B4B4);
+	background: -webkit-radial-gradient(#537072, #B4B4B4); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-radial(#537072, #B4B4B4); /* For Opera 11.1 to 12.0 */
+	background: -moz-radial-gradient(#537072, #B4B4B4); /* For Firefox 3.6 to 15 */
+	height: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+#logintable{
+	font-family: 'Raleway', serif;
+	text-align: left;
+	font-size: 38px;
+	color: #fff;
+	background: #24333c;
+	padding: 10px 20px 20px 20px;
+	background: rgb(36, 51, 60); /* Fallback for older browsers without RGBA-support */
+	background: linear-gradient(to bottom, rgba(36,51,60, 1), rgba(58, 77, 79, 0.6)); /*Standard*/
+   /* background: rgba(36, 51, 60, 0.7);*/
+}
+
+.sign_up{
+   background: url("pictures/sign_up_icon.png") no-repeat 0 0;
+   background-size: 28px;
+   border-radius: 5px;
+	font-family: 'Raleway', serif;
+	text-align: center;
+	font-size: 18px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	color: #fff;
+	padding: 0px;
+	font-weight: bold;
+	background-color: #AF8700;
+	border: none;
+   height: 28px;
+   width: 49%;
+ }
+ 
+ .sign_up:hover {background-color: #665600}
+ 
+ .sign_in{
+   background: url("pictures/sing_in_key.png") no-repeat 0 0;
+   background-size: 28px;
+   border-radius: 5px;
+	font-family: 'Raleway', serif;
+	text-align: center;
+	font-size: 18px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	color: #fff;
+	padding: 0px;
+	font-weight: bold;
+	background-color: #AF8700;
+	border: none;
+   height: 28px;
+   width: 42%;
+ }
+ 
+ .sign_in:hover {background-color: #665600}
+ 
+ .input[type=text] {
+	background: url("pictures/user_photo.png") no-repeat 0 0;
+	background-size: 28px;
+	border: none;
+	border-bottom: 1px solid white;
+	width: 92%;
+	color: gold;
+	font-family: 'Raleway', serif;
+	text-align: left;
+	padding-left: 32px;
+	
+	font-size: 20px;
+ }
+ 
+  .input[type=password] {
+	background: url("pictures/password_icon.png") no-repeat 0 0;
+	background-size: 26px;
+	border:none;
+	border-bottom: 1px solid white;
+	width: 92%;
+	color: gold;
+	font-family: 'Raleway', serif;
+	text-align: left;
+	padding-left: 32px;
+	font-size: 20px;
+ }
+ 
+   .input[type=email] {
+	background: url("pictures/email_icon.png") no-repeat 0 0;
+	background-size: 26px;
+	border:none;
+	border-bottom: 1px solid white;
+	width: 92%;
+	color: gold;
+	font-family: 'Raleway', serif;
+	text-align: left;
+	padding-left: 32px;
+	font-size: 20px;
+ }
+
+ .input[type=submit]{
+	border-radius: 5px;
+	font-family: 'Raleway', serif;
+	text-align: center;
+	font-size: 24px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	color: #fff;
+	padding: 0px;
+	font-weight: bold;
+	background-color: #AF8700;
+	border: none;
+    height: 35px;
+    width: 100%;
+	padding: 0px;
+ }
+ 
+ .input[type=submit]:hover{
+	 background-color: #665600;
+}
+
+.input[type=password]:focus{
+	border:none;
+	border-bottom: 2px solid white;
+}
+.input[type=text]:focus{
+	border:none;
+	border-bottom: 2px solid white;
+}
+.input[type=email]:focus{
+	border:none;
+	border-bottom: 2px solid white;
+}
+
+.backbutton{
+   border-radius: 5px;
+	font-family: 'Raleway', serif;
+	text-align: center;
+	font-size: 18px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	color: #fff;
+	padding: 0px;
+	font-weight: bold;
+	background-color: #cc0000;
+	border: none;
+   height:30px;
+   width:49%;
+   padding: 0px;
+ }
+ 
+ .backbutton:hover{
+	 background-color: #800000;
+ }
