@@ -1,52 +1,34 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 496.2 496.2" style="enable-background:new 0 0 496.2 496.2;" xml:space="preserve">
-<path style="fill:#334D5C;" d="M496.2,248.1C496.2,111.1,385.1,0,248.1,0S0,111.1,0,248.1s111.1,248.1,248.1,248.1
-	S496.2,385.1,496.2,248.1z"/>
-<g>
-	<path style="fill:#CECECE;" d="M444.4,232.3l-96.3-75.7c0,0-9.7-5.6-13.6,4.9c0,0-9.8,28.5-12.7,38.6c-4.6,14.2,5.4,28.6,14.6,8.9
-		l8.4-19.6l30.4,29.3c0,0,4.6,3.3,5.6,13.8L444.4,232.3z"/>
-	<path style="fill:#CECECE;" d="M51.5,232.3l96.3-75.8c0,0,9.7-5.6,13.6,4.9c0,0,9.8,28.5,12.7,38.6c4.6,14.2-5.4,28.6-14.6,8.9
-		l-8.4-19.6l-30.4,29.3c0,0-4.6,3.3-5.6,13.8L51.5,232.3z"/>
-</g>
-<path style="fill:#E5E5E5;" d="M441.7,231.5H54.5c-3.5,0-6.3,3-6.3,6.8v96.1c0,3.8,2.8,6.8,6.3,6.8h157.2c4,0,6.8-2.6,7.8-6
-	c8.2-29.1,21.8-36.1,28.6-36.1s20.6,6.8,28.8,36.5c0.8,2.8,3,5.6,7.6,5.6h157.2c3.5,0,6.3-3,6.3-6.8v-96.1
-	C448,234.5,445.2,231.5,441.7,231.5z"/>
-<path style="fill:#CE0F1E;" d="M424.7,288.1c0,19.5-12.9,35.2-28.8,35.2h-66.5c-15.9,0-28.8-15.8-28.8-35.2v-2.9
-	c0-19.5,12.9-35.2,28.8-35.2h66.5c15.9,0,28.8,15.8,28.8,35.2V288.1z"/>
-<path style="fill:#E21730;" d="M329.4,323.3c-15.9,0-28.8-15.8-28.8-35.2v-2.9c0-19.5,12.9-35.2,28.8-35.2h66.5L329.4,323.3z"/>
-<path style="fill:#03BECD;" d="M197,288.1c0,19.5-12.9,35.2-28.8,35.2h-66.5c-15.9,0-28.8-15.8-28.8-35.2v-2.9
-	c0-19.5,12.9-35.2,28.8-35.2h66.5c15.9,0,28.8,15.8,28.8,35.2V288.1z"/>
-<path style="fill:#0ED3D8;" d="M101.6,323.3c-15.9,0-28.8-15.8-28.8-35.2v-2.9c0-19.5,12.9-35.2,28.8-35.2h66.5L101.6,323.3z"/>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="815px" height="949px" viewBox="0 0 815 949" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>RF</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-1.7%" y="-1.3%" width="103.5%" height="103.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3">
+            <circle id="Oval" fill="#FFFFFF" cx="467.177419" cy="185.5" r="185.5"></circle>
+            <circle id="Oval-2" fill="#FFFFFF" cx="180.5" cy="229.5" r="135.5"></circle>
+            <g id="Group" filter="url(#filter-1)" transform="translate(622.500000, 508.000000) rotate(270.000000) translate(-622.500000, -508.000000) translate(420.500000, 322.500000)">
+                <polygon id="Triangle" fill="#FFFFFF" points="201.528038 0 403.056076 371 0 371"></polygon>
+                <polygon id="Triangle" fill="#AF8700" points="201.065446 70.7366864 344.016001 334.168639 58.1148911 334.168639"></polygon>
+            </g>
+            <rect id="Rectangle-2" fill="#FFFFFF" x="0" y="280" width="663" height="431" rx="60"></rect>
+            <path d="M80,325 L582,325 C601.329966,325 617,340.670034 617,360 L617,628 C617,647.329966 601.329966,663 582,663 L80,663 L80,663 C60.6700338,663 45,647.329966 45,628 L45,360 C45,340.670034 60.6700338,325 80,325 L80,325 Z M180,311 C133.055796,311 95,272.944204 95,226 C95,179.055796 133.055796,141 180,141 C226.944204,141 265,179.055796 265,226 C265,272.944204 226.944204,311 180,311 Z" id="Rectangle-3" fill="#AF8700"></path>
+            <circle id="Oval-3" fill="#AF8700" cx="466.5" cy="183.5" r="135.5"></circle>
+            <text id="movRepo" font-family="Chalkduster" font-size="130" font-weight="normal" fill="#FFFFFF">
+                <tspan x="80.038674" y="877">movRepo</tspan>
+            </text>
+        </g>
+        <polygon id="Triangle-2" fill="#FFFFFF" points="404.19546 500.305628 285 569.611256 285 431"></polygon>
+    </g>
 </svg>
