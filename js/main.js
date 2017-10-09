@@ -65,18 +65,18 @@ function getMovie(){
           <div class="col-md-8">
             <h2>${movie.title}</h2>
             <ul class="list-group">
-              <li class="list-group-item"><strong>Műfaj:</strong> ${movie.genres[0].name}</li>
-              <li class="list-group-item"><strong>Kiadás:</strong> ${movie.release_date}</li>
-              <li class="list-group-item"><strong>Értékelés:</strong> ${movie.vote_average}</li>
+              <li class="list-group-item"><strong>Category:</strong> ${movie.genres[0].name}</li>
+              <li class="list-group-item"><strong>Date:</strong> ${movie.release_date}</li>
+              <li class="list-group-item"><strong>Rating:</strong> ${movie.vote_average}</li>
             </ul>
           </div>
         </div>
         <div class="row">
           <div class="well">
-            <h3>Leírás</h3>
+            <h3>Description</h3>
             ${movie.overview}
             <hr>
-            <a href="./index.html" class="btn btn-default">Vissza</a>
+            <a href="./index.html" class="btn btn-default">Back</a>
           </div>
         </div>
       `;
