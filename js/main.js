@@ -1,20 +1,23 @@
 $(document).ready(() => {
-
         $('#searchForm input[type=submit]').hide();
 
         $('#searchForm input[type=text]').keypress(function(e) {
             if(e.which == 10 || e.which == 13) {
               this.form.submit();
               $('#results').css("visibility", "visible");
+              $('.downArrow').css("visibility", "visible");
               let searchText = $('#searchText').val();
               getMovies(searchText);
+
+              $('html, body').animate({
+                scrollTop: $("#movies").offset().top
+              }, 2000);
             }
         });
 });
 
-function handleMissingImg(e)
-{
-     e.src = 'res/no_photo.jpg';
+function handleMissingImg(e) {
+  e.src = 'res/no_photo.jpg';
 }
 
 function getMovies(searchText) {
@@ -41,7 +44,6 @@ function getMovies(searchText) {
       console.log(err);
     });
 }
-
 
 function movieSelected(id){
   sessionStorage.setItem('movieId', id);

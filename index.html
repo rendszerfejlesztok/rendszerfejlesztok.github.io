@@ -10,16 +10,12 @@
 				<link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon">
 				<link rel="icon" href="res/favicon.ico" type="image/x-icon">
 
-				<!-- 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-      -->
-				
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
         <link rel="stylesheet" href="css/grid.css">
         <link rel="stylesheet" href="css/navigation.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/mediaquery.css">
 				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
@@ -27,31 +23,59 @@
   <section class="navigation">
     <header>
       <nav>
-        <a href="./index.html"><img id="logo" src="res/logo.svg" alt="logo"></a>
-				<form id="searchForm" action="#">
-					<input type="text" id="searchText" placeholder="Search..">
-          <i class="fa fa-search" aria-hidden="true"></i>
-          <input type="submit" />
-				</form>
-				<ul>
-					<li><a href="#top">top</a></li>
-					<li><a href="#moviesNew">movies</a></li>
-					<li><a href="#seriesNew">series</a></li>
-					<li><a href="./login.html">login</a></li>
-					<span class="logout"><li><a href="./index.html">logout</a></li></span>
-					<span class="register"><li><a href="./sign_up.html">register</a></li></span>
+        <a href="./index.html?#"><img id="logo" src="res/logo.svg" alt="logo"></a>
+				
+				<ul class="menu">
+					<li class="specialNav">movies
+            <ul class="drop-menu menu1">
+              <li class="top"><a href="">TOP</a></li>
+              <li><a href="">Action</a></li>
+              <li><a href="">Animation</a></li>
+              <li><a href="">Comedy</a></li>
+              <li><a href="">Documentary</a></li>
+              <li><a href="">Drama</a></li>
+              <li><a href="">Fantasy</a></li>
+              <li><a href="">Horror</a></li>
+              <li><a href="">Romance</a></li>
+              <li><a href="">Sci-Fi</a></li>
+              <li><a href="">Thriller</a></li>
+            </ul>
+          </li>
+					<li class="specialNav">series
+            <ul class="drop-menu menu2">
+              <li class="top"><a href="">TOP</a></li>
+              <li><a href="">Action</a></li>
+              <li><a href="">Animation</a></li>
+              <li><a href="">Comedy</a></li>
+              <li><a href="">Documentary</a></li>
+              <li><a href="">Drama</a></li>
+              <li><a href="">Fantasy</a></li>
+              <li><a href="">Horror</a></li>
+              <li><a href="">Romance</a></li>
+              <li><a href="">Sci-Fi</a></li>
+              <li><a href="">Thriller</a></li>
+            </ul>
+          </li>
+					<li class="userLink"><a href="./login.html">login</a></li>
+					<span class="logout"><li class="userLink"><a href="./index.html">logout</a></li></span>
+					<span class="register"><li class="userLink"><a href="./sign_up.html">register</a></li></span>
 					<li>&nbsp;</li>
-
 				</ul>
       </nav>
     </header>
   </section>
   
+  <section class="background">
+    <form id="searchForm" action="#">
+      <input type="text" id="searchText" placeholder="Search..">
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <input type="submit" />
+      <a class="downArrow" href="#movies"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+    </form>
+  </section>
+  
 
-
-  <!-- MINDEN TARTALOM -->
-  <section class="content">
-    <h1 id="results">Results</h1>
+  <section id="content" class="content">
       <div class="ui grid container">
         <div class="row">
           <div id="movies">
@@ -59,47 +83,12 @@
           </div>
       </div>
     </div>
-
-  	<div id="moviesNew" class="trailers">
-  		<h1>The newest uploaded films</h1>
-  		<div class="container">
-  			<div class="row">
-  				<div class="film">
-  					<a href="#">
-  						<img class="trailerImg" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjA3ODQwNzM0OF5BMl5BanBnXkFtZTgwMjY5MTczMzI@._V1_SX201_CR0,0,201,298_AL_.jpg" alt="film">
-  						<span class="filmTitle">Dolls Are Creepy</span>
-  					</a>
-  					<span class="filmDate">2017</span>
-						<p class="filmDesc comment more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis a cupiditate fugiat, qui doloremque. Numquam dignissimos, id vero saepe hic adipisci odio eveniet modi ullam a aut ut, eos ducimus.</p>
-  				</div>
-  			</div>
-  		</div>
-  	</div>
-
-  	<div id="seriesNew" class="trailers">
-  		<h1>The newest series episodes</h1>
-  		<div class="container">
-  			<div class="row">
-  				
-  			</div>
-  		</div>
-  	</div>
-
-  	<div id="top" class="trailers">
-  		<h1>Biggest rated</h1>
-  		<div class="container">
-  			<div class="row">
-  				
-  			</div>
-  		</div>
-  	</div>
   </section>
   
-  <!-- FOOOOOTER -->
   <section class="footer">
     <footer>
-      <a href="/"><img id="logo" src="res/logo.svg" alt="logo"></a>
-      <ul>
+      <a href="./index.html?#"><img id="logo" src="res/logo.svg" alt="logo"></a>
+      <ul class="pages">
 				<li><a href="#top">top</a></li>
 				<li><a href="#moviesNew">movies</a></li>
 				<li><a href="#seriesNew">series</a></li>

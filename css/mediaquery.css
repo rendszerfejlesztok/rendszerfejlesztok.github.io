@@ -1,0 +1,35 @@
+@media only screen and (max-width: 1400px) {
+	form input[type=text] {
+	  font-size: 18px;
+	  width: 300px;
+	  padding: 14px 20px 14px 30px;
+	}
+
+	form input[type=text]:focus {
+  	width: 380px;
+  	outline: none;
+	}
+
+	form i.fa-search {
+	  color: #616161;
+	  font-size: 20px;
+	  top: 2px;
+	  left: -55px;
+	}
+
+	.background a.downArrow {
+	  font-size: 80px;
+	  left: 50%;
+	  bottom: 50px;
+	}
+
+	.background a:hover.downArrow {
+ 	 top: 230px;
+	}
+
+	section.footer #logo {
+	  width: 60px;
+	  margin-left: 250px;
+	  margin-top: 120px;
+	}
+}

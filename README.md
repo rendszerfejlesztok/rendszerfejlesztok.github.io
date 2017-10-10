@@ -1,1 +1,0 @@
-# rendszerfejlesztok.github.io
